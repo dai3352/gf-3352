@@ -16,7 +16,7 @@ export default {
 
     if (contentType.includes("text/html") || contentType.includes("application/javascript")) {
       let text = await res.text();
-      text = text.replaceAll("greasyfork.org", workerHost);
+      text = text.replaceAll("dai3352.jsdai.workers.dev", workerHost);
       res = new Response(text, res);
     }
     return res;
