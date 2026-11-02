@@ -1,6 +1,6 @@
 export default {
   async fetch(request, env, ctx) {
-    const upstreamHost = "greasyfork.org";
+    const upstreamHost = "scriptcat.org";
     const url = new URL(request.url);
     url.hostname = upstreamHost;
 
