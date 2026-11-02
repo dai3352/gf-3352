@@ -1,6 +1,6 @@
 // Cloudflare Worker 反向代理 GreasyFork
 const TARGET_HOST = 'greasyfork.org';
-const TARGET_URL = `dai3352.jsdai.workers.dev`;
+const TARGET_URL = `https://${TARGET_HOST}`;
 
 addEventListener('fetch', event => {
   event.respondWith(handleRequest(event.request));
